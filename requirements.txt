@@ -1,0 +1,5 @@
+sfm
+faker
+rolex
+sqlalchemy_mate
+psycopg2
