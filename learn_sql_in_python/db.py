@@ -18,10 +18,10 @@ def clean_all(engine):
             except:
                 pass
 
-
 postgres_engine = sqlalchemy.create_engine(
     "postgresql+psycopg2://asoidnsj:m9PLClSSHt1wVmxL_qlbZpNh5lDFWQRe@stampy.db.elephantsql.com:5432/asoidnsj"
 )
+clean_all(postgres_engine)
+
 sqlite_in_memory_engine = sqlalchemy.create_engine("sqlite:///:memory:")
 
-clean_all(postgres_engine)

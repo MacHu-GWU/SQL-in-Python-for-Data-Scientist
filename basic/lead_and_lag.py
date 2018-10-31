@@ -62,7 +62,6 @@ def lead_lag():
     """)
     pprint(query, engine)
 
-
 lead_lag()
 
 
