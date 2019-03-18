@@ -1,3 +1,7 @@
+- ``make docker_run``: run postgres in container
+- ``make docker_stop``: stop container
+
+
 #SQL，本应该很简单
 ------
 本教程是面向非计算机专业，对立志于从事data science, data analysis, statistician, machine learning, data mining的人的一部数据库简明教程。

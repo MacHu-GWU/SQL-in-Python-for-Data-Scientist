@@ -72,6 +72,8 @@ def example():
 
     query = ses.query(Team)
     pprint(query, engine)
+    query = ses.query(Match)
+    pprint(query, engine)
 
     query = ses.query(
                 Match.id,

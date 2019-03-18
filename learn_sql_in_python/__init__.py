@@ -13,3 +13,11 @@ __author_email__ = "husanhe@gmail.com"
 __maintainer__ = "Sanhe Hu"
 __maintainer_email__ = "husanhe@gmail.com"
 __github_username__ = "MacHu-GWU"
+
+try:
+    from .playground import Playground, sqlalchemy as sa
+    from .db import (
+        connect_local_postgres_in_container
+    )
+except ImportError as e:
+    pass

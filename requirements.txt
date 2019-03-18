@@ -1,7 +1,11 @@
-sfm
 faker
-rolex
-sqlalchemy_mate
-psycopg2
 dataset
-attrs_mate
+attrs_mate==0.0.3
+attrs
+sqlalchemy_mate==0.0.7
+sqlalchemy
+psycopg2-binary
+loggerFactory==0.0.5
+rolex==0.0.8
+sfm==0.0.16
+tabulate==0.8.3

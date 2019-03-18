@@ -344,3 +344,13 @@ publish: dev_dep ## ** Publish This Library to PyPI
 	${BIN_PYTHON} setup.py sdist bdist_wheel
 	${BIN_TWINE} upload dist/*
 	-rm -rf build dist .egg ${PACKAGE_NAME}.egg-info
+
+.PHONY:
+docker_run: ## Run postgresql docker
+	-docker container stop dupe-remove-test-db
+	docker run --rm --name dupe-remove-test-db -p 5432:5432 -e POSTGRES_PASSWORD=password -d postgres
+	sleep 1
+
+.PHONY:
+docker_stop: ## Stop postgresql docker
+	docker container stop dupe-remove-test-db
